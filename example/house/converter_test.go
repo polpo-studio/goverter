@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/jmattheis/goverter/example/house"
-	"github.com/jmattheis/goverter/example/house/generated"
+	"github.com/polpo-studio/goverter/example/house"
+	"github.com/polpo-studio/goverter/example/house/generated"
 	"github.com/stretchr/testify/require"
 )
 
@@ -19,7 +19,7 @@ func TestConverter(t *testing.T) {
 				Position: 1,
 				Owner: house.DBPerson{
 					ID:         5,
-					Name:       "jmattheis",
+					Name:       "polpo-studio",
 					MiddleName: sql.NullString{},
 					Friends: []house.DBPerson{{
 						ID:         5,
@@ -45,10 +45,10 @@ func TestConverter(t *testing.T) {
 		Apartments: map[house.APIRoomNR]house.APIApartment{
 			house.APIRoomNR(5): {
 				Position:  1,
-				OwnerName: "jmattheis",
+				OwnerName: "polpo-studio",
 				Owner: house.APIPerson{
 					ID:         5,
-					FirstName:  p("jmattheis"),
+					FirstName:  p("polpo-studio"),
 					MiddleName: nil,
 					Friends: []house.APIPerson{{
 						ID:         5,

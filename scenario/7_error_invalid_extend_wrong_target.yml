@@ -10,6 +10,6 @@ input:
         }
 error: |-
     Error while parsing extend in
-        github.com/jmattheis/goverter/execution.Converter
+        github.com/polpo-studio/goverter/execution.Converter
 
     HelloWorld has no or too many returns

@@ -17,9 +17,9 @@ input:
         }
 error: |-
     Error while creating converter method:
-        func (github.com/jmattheis/goverter/execution.Converter).Convert(source github.com/jmattheis/goverter/execution.Input) github.com/jmattheis/goverter/execution.Output
+        func (github.com/polpo-studio/goverter/execution.Converter).Convert(source github.com/polpo-studio/goverter/execution.Input) github.com/polpo-studio/goverter/execution.Output
 
-    | github.com/jmattheis/goverter/execution.Input
+    | github.com/polpo-studio/goverter/execution.Input
     |
     |
     |
@@ -28,7 +28,7 @@ error: |-
     |      |
     |      | string
     |
-    | github.com/jmattheis/goverter/execution.Output
+    | github.com/polpo-studio/goverter/execution.Output
 
     Cannot match the target field with the source entry: multiple matches found for "Myid". Possible matches: MyID, MyId.
 
@@ -36,4 +36,4 @@ error: |-
 
         goverter:map MyID Myid
 
-    See https://github.com/jmattheis/goverter#struct-field-mapping.
+    See https://github.com/polpo-studio/goverter#struct-field-mapping.

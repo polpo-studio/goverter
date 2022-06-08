@@ -27,15 +27,15 @@ input:
         }
 error: |-
     Error while creating converter method:
-        func (github.com/jmattheis/goverter/execution.Converter).Convert(source github.com/jmattheis/goverter/execution.Input) github.com/jmattheis/goverter/execution.Output
+        func (github.com/polpo-studio/goverter/execution.Converter).Convert(source github.com/polpo-studio/goverter/execution.Input) github.com/polpo-studio/goverter/execution.Output
 
-    | github.com/jmattheis/goverter/execution.Input
+    | github.com/polpo-studio/goverter/execution.Input
     |
-    |      | *github.com/jmattheis/goverter/execution.InputNested
+    |      | *github.com/polpo-studio/goverter/execution.InputNested
     |      |
-    |      |      | github.com/jmattheis/goverter/execution.InputNestedNested
+    |      |      | github.com/polpo-studio/goverter/execution.InputNestedNested
     |      |      |
-    |      |      |     | *github.com/jmattheis/goverter/execution.InputNestedNestedNested
+    |      |      |     | *github.com/polpo-studio/goverter/execution.InputNestedNestedNested
     |      |      |     |
     |      |      |     |      | *time.Time (It is a pointer because the nested property in the goverter:map was a pointer)
     |      |      |     |      |
@@ -54,6 +54,6 @@ error: |-
     |
     |
     |
-    | github.com/jmattheis/goverter/execution.Output
+    | github.com/polpo-studio/goverter/execution.Output
 
     TypeMismatch: Cannot convert time.Time to string

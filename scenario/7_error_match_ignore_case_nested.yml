@@ -22,11 +22,11 @@ input:
         }
 error: |-
     Error while creating converter method:
-        func (github.com/jmattheis/goverter/execution.Converter).Convert(source github.com/jmattheis/goverter/execution.Input) github.com/jmattheis/goverter/execution.Output
+        func (github.com/polpo-studio/goverter/execution.Converter).Convert(source github.com/polpo-studio/goverter/execution.Input) github.com/polpo-studio/goverter/execution.Output
 
-    | github.com/jmattheis/goverter/execution.Input
+    | github.com/polpo-studio/goverter/execution.Input
     |
-    |      | github.com/jmattheis/goverter/execution.InputNested
+    |      | github.com/polpo-studio/goverter/execution.InputNested
     |      |
     |      |      | string
     |      |      |
@@ -35,8 +35,8 @@ error: |-
     |      |      |
     |      |      | int
     |      |
-    |      | github.com/jmattheis/goverter/execution.OutputNested
+    |      | github.com/polpo-studio/goverter/execution.OutputNested
     |
-    | github.com/jmattheis/goverter/execution.Output
+    | github.com/polpo-studio/goverter/execution.Output
 
     TypeMismatch: Cannot convert string to int

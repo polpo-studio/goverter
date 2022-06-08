@@ -11,6 +11,6 @@ input:
         }
 error: |-
     Error while parsing extend in
-        github.com/jmattheis/goverter/execution.Converter
+        github.com/polpo-studio/goverter/execution.Converter
 
     second return parameter must have type error but had: int

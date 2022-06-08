@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/dave/jennifer/jen"
-	"github.com/jmattheis/goverter/xtype"
 	"github.com/pkg/errors"
+	"github.com/polpo-studio/goverter/xtype"
 )
 
 const (
@@ -153,12 +153,12 @@ func (g *generator) parseExtend(converterInterface types.Type, converterScope *t
 				// example: goverter:extend :MyLocalConvert
 				// the purpose of the ':' in this case is confusing, do not allow such case
 				return fmt.Errorf(`package path must not be empty in the extend statement "%s".
-See https://github.com/jmattheis/goverter#extend-with-custom-implementation`, methodName)
+See https://github.com/polpo-studio/goverter#extend-with-custom-implementation`, methodName)
 			}
 			namePattern = parts[1]
 			if namePattern == "" {
 				return fmt.Errorf(`method name pattern is required in the extend statement "%s".
-See https://github.com/jmattheis/goverter#extend-with-custom-implementation`, methodName)
+See https://github.com/polpo-studio/goverter#extend-with-custom-implementation`, methodName)
 			}
 		}
 

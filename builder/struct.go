@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/dave/jennifer/jen"
-	"github.com/jmattheis/goverter/xtype"
+	"github.com/polpo-studio/goverter/xtype"
 )
 
 // Struct handles struct types.
@@ -226,5 +226,5 @@ Possible solutions:
           // ...
       }
 
-See https://github.com/jmattheis/goverter#extend-with-custom-implementation`, targetField, targetField, sourceType, targetType)
+See https://github.com/polpo-studio/goverter#extend-with-custom-implementation`, targetField, targetField, sourceType, targetType)
 }

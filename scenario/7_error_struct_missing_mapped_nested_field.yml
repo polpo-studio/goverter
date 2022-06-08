@@ -21,11 +21,11 @@ input:
         }
 error: |-
     Error while creating converter method:
-        func (github.com/jmattheis/goverter/execution.Converter).Convert(source github.com/jmattheis/goverter/execution.Input) github.com/jmattheis/goverter/execution.Output
+        func (github.com/polpo-studio/goverter/execution.Converter).Convert(source github.com/polpo-studio/goverter/execution.Input) github.com/polpo-studio/goverter/execution.Output
 
-    | github.com/jmattheis/goverter/execution.Input
+    | github.com/polpo-studio/goverter/execution.Input
     |
-    |      | github.com/jmattheis/goverter/execution.Nested
+    |      | github.com/polpo-studio/goverter/execution.Nested
     |      |
     |      |      | ???
     |      |      |
@@ -36,6 +36,6 @@ error: |-
     |
     |
     |
-    | github.com/jmattheis/goverter/execution.Output
+    | github.com/polpo-studio/goverter/execution.Output
 
     Cannot find the mapped field on the source entry: "Name3" does not exist.

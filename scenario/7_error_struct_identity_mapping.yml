@@ -27,11 +27,11 @@ input:
         }
 error: |-
     Error while creating converter method:
-        func (github.com/jmattheis/goverter/execution.Converter).ConvertPerson(source github.com/jmattheis/goverter/execution.Person) github.com/jmattheis/goverter/execution.APIPerson
+        func (github.com/polpo-studio/goverter/execution.Converter).ConvertPerson(source github.com/polpo-studio/goverter/execution.Person) github.com/polpo-studio/goverter/execution.APIPerson
 
-    | github.com/jmattheis/goverter/execution.Person
+    | github.com/polpo-studio/goverter/execution.Person
     |
-    |      | github.com/jmattheis/goverter/execution.Person
+    |      | github.com/polpo-studio/goverter/execution.Person
     |      |
     |      |             | *string
     |      |             |
@@ -40,8 +40,8 @@ error: |-
     |      |             |
     |      |             | string
     |      |
-    |      | github.com/jmattheis/goverter/execution.APIAddress
+    |      | github.com/polpo-studio/goverter/execution.APIAddress
     |
-    | github.com/jmattheis/goverter/execution.APIPerson
+    | github.com/polpo-studio/goverter/execution.APIPerson
 
     TypeMismatch: Cannot convert *string to string

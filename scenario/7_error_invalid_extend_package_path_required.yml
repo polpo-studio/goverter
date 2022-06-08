@@ -8,7 +8,7 @@ input:
         }
 error: |-
     Error while parsing extend in
-        github.com/jmattheis/goverter/execution.Converter
+        github.com/polpo-studio/goverter/execution.Converter
 
     package path must not be empty in the extend statement ":Convert".
-    See https://github.com/jmattheis/goverter#extend-with-custom-implementation
+    See https://github.com/polpo-studio/goverter#extend-with-custom-implementation

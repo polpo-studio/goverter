@@ -19,11 +19,11 @@ input:
         }
 error: |-
     Error while creating converter method:
-        func (github.com/jmattheis/goverter/execution.Converter).Convert(source github.com/jmattheis/goverter/execution.Input) github.com/jmattheis/goverter/execution.Output
+        func (github.com/polpo-studio/goverter/execution.Converter).Convert(source github.com/polpo-studio/goverter/execution.Input) github.com/polpo-studio/goverter/execution.Output
 
-    | github.com/jmattheis/goverter/execution.Input
+    | github.com/polpo-studio/goverter/execution.Input
     |
-    |      | github.com/jmattheis/goverter/execution.Nested
+    |      | github.com/polpo-studio/goverter/execution.Nested
     |      |
     |      |      | int
     |      |      |
@@ -38,6 +38,6 @@ error: |-
     |
     |
     |
-    | github.com/jmattheis/goverter/execution.Output
+    | github.com/polpo-studio/goverter/execution.Output
 
     Cannot access 'Oops' on int.

@@ -11,7 +11,7 @@ input:
 
         // goverter:converter
         // the next line enables string converters from local package
-        // goverter:extend github.com/jmattheis/goverter/execution/generated:intToString
+        // goverter:extend github.com/polpo-studio/goverter/execution/generated:intToString
         type Converter interface {
             Convert(source Input) Output
         }
@@ -24,6 +24,6 @@ input:
         }
 error: |-
     Error while parsing extend in
-        github.com/jmattheis/goverter/execution.Converter
+        github.com/polpo-studio/goverter/execution.Converter
 
     could not extend: method intToString is unexported

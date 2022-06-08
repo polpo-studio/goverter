@@ -9,6 +9,6 @@ input:
         const HelloWorld = 5
 error: |-
     Error while parsing extend in
-        github.com/jmattheis/goverter/execution.Converter
+        github.com/polpo-studio/goverter/execution.Converter
 
     HelloWorld is not a function

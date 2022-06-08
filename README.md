@@ -5,20 +5,20 @@
 <h1 align="center">goverter</h1>
 <p align="center"><i>a "type-safe Go converter" generator</i></p>
 <p align="center">
-    <a href="https://github.com/jmattheis/goverter/actions/workflows/build.yml">
-        <img alt="Build Status" src="https://github.com/jmattheis/goverter/actions/workflows/build.yml/badge.svg">
+    <a href="https://github.com/polpo-studio/goverter/actions/workflows/build.yml">
+        <img alt="Build Status" src="https://github.com/polpo-studio/goverter/actions/workflows/build.yml/badge.svg">
     </a>
-     <a href="https://codecov.io/gh/jmattheis/goverter">
-        <img alt="codecov" src="https://codecov.io/gh/jmattheis/goverter/branch/main/graph/badge.svg">
+     <a href="https://codecov.io/gh/polpo-studio/goverter">
+        <img alt="codecov" src="https://codecov.io/gh/polpo-studio/goverter/branch/main/graph/badge.svg">
     </a>
-    <a href="https://goreportcard.com/report/github.com/jmattheis/goverter">
-        <img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/jmattheis/goverter">
+    <a href="https://goreportcard.com/report/github.com/polpo-studio/goverter">
+        <img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/polpo-studio/goverter">
     </a>
-    <a href="https://pkg.go.dev/github.com/jmattheis/goverter">
-        <img alt="Go Reference" src="https://pkg.go.dev/badge/github.com/jmattheis/goverter.svg">
+    <a href="https://pkg.go.dev/github.com/polpo-studio/goverter">
+        <img alt="Go Reference" src="https://pkg.go.dev/badge/github.com/polpo-studio/goverter.svg">
     </a>
-    <a href="https://github.com/jmattheis/goverter/releases/latest">
-        <img alt="latest release" src="https://img.shields.io/github/release/jmattheis/goverter.svg">
+    <a href="https://github.com/polpo-studio/goverter/releases/latest">
+        <img alt="latest release" src="https://img.shields.io/github/release/polpo-studio/goverter.svg">
     </a>
 </p>
 
@@ -30,14 +30,14 @@ use reflection.
 ## Features
 
 - Automatic conversion of builtin types
-  ([`house` example](https://github.com/jmattheis/goverter/blob/main/example/house)), this includes:
+  ([`house` example](https://github.com/polpo-studio/goverter/blob/main/example/house)), this includes:
   - slices, maps, named types, primitive types, pointers
   - structs with same fields
 - Extend parts of the conversion with your own implementation:
   [Docs](#extend-with-custom-implementation)
 - Optional return of an error: [Docs](#errors)
 - Awesome error
-  messages: [mismatch type test](https://github.com/jmattheis/goverter/blob/main/scenario/7_error_nested_mismatch.yml)
+  messages: [mismatch type test](https://github.com/polpo-studio/goverter/blob/main/scenario/7_error_nested_mismatch.yml)
 - No reflection in the generated code
 
 ## Usage
@@ -49,7 +49,7 @@ use reflection.
 1. Add `goverter` as dependency to your project
 
    ```bash
-   $ go get github.com/jmattheis/goverter
+   $ go get github.com/polpo-studio/goverter
    ```
 
 1. Create your converter interface and mark it with a comment containing `goverter:converter`
@@ -77,10 +77,10 @@ use reflection.
 1. Run `goverter`:
 
    ```
-   $ go run github.com/jmattheis/goverter/cmd/goverter [package-name-in-full or relative-path-starts-with-a-dot]
+   $ go run github.com/polpo-studio/goverter/cmd/goverter [package-name-in-full or relative-path-starts-with-a-dot]
    # example
-   $ go run github.com/jmattheis/goverter/cmd/goverter github.com/jmattheis/goverter/example/simple
-   $ go run github.com/jmattheis/goverter/cmd/goverter ./example/simple
+   $ go run github.com/polpo-studio/goverter/cmd/goverter github.com/polpo-studio/goverter/example/simple
+   $ go run github.com/polpo-studio/goverter/cmd/goverter ./example/simple
    ```
 
    Note that relative path must start with a dot to indicate it is not a golang package. Omiting the dot (e.g. example/simple) may not work.
@@ -90,7 +90,7 @@ use reflection.
    ```go
    package generated
 
-   import simple "github.com/jmattheis/goverter/example/simple"
+   import simple "github.com/polpo-studio/goverter/example/simple"
 
    type ConverterImpl struct{}
 
@@ -156,7 +156,7 @@ Note: The function name can be a regular expression.
 // goverter:extend strconv:Parse.*
 ```
 
-See [`house` example sql.NullString](https://github.com/jmattheis/goverter/blob/main/example/house/input.go#L9)
+See [`house` example sql.NullString](https://github.com/polpo-studio/goverter/blob/main/example/house/input.go#L9)
 
 `input.go`
 

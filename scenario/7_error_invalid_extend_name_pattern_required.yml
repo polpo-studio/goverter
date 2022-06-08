@@ -8,7 +8,7 @@ input:
         }
 error: |-
     Error while parsing extend in
-        github.com/jmattheis/goverter/execution.Converter
+        github.com/polpo-studio/goverter/execution.Converter
 
     method name pattern is required in the extend statement "strconv:".
-    See https://github.com/jmattheis/goverter#extend-with-custom-implementation
+    See https://github.com/polpo-studio/goverter#extend-with-custom-implementation

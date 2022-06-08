@@ -8,6 +8,6 @@ input:
         }
 error: |-
     Error while parsing extend in
-        github.com/jmattheis/goverter/execution.Converter
+        github.com/polpo-studio/goverter/execution.Converter
 
     could not parse name as regexp "(": error parsing regexp: missing closing ): `(`
