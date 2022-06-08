@@ -27,6 +27,9 @@ func TestScenario(t *testing.T) {
 
 	for _, file := range files {
 		require.False(t, file.IsDir(), "should not be a directory")
+		if file.Name() != "3_struct_mapping_extend_pointer.yml" {
+			continue
+		}
 
 		t.Run(file.Name(), func(t *testing.T) {
 			scenarioFileName := filepath.Join(scenarios, file.Name())
